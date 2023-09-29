@@ -1,0 +1,21 @@
+.stats {
+  display: flex;
+  align-items: center;
+  height: 250px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 3);
+  text-align: center;
+
+}
+
+.label {
+    font-size: 20px;
+}
+.quantity {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}

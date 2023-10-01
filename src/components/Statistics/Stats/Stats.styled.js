@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const Statistic = styled.ul`
 display: flex;
 height: 250px;
+margin-bottom: 50px;
 
 `
 

@@ -23,7 +23,7 @@ export const Status = styled.span`
   width: 30px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: ${({status}) => (status ? 'green' : 'red')};
+  background-color: ${({$status}) => ($status ? 'green' : 'red')};
   border-radius: 50%;
 `;
 export const Avatar = styled.img`

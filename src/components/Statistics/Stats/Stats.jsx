@@ -6,7 +6,7 @@ export const Stats = () => {
     <Statistic>
       {data.map(({ id, label, percentage }) => {
         return (
-          <Licomponent id={id}>
+          <Licomponent key={id}>
             <Label>{label}</Label>
             <Percentage>{percentage}%</Percentage>
           </Licomponent>

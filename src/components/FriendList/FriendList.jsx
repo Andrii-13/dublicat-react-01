@@ -1,23 +1,21 @@
+import { 
+  // Avatar, 
+  FriendsList, 
+  // Item, 
+  // Name, 
+  // Status 
+} from './FriendList.styled';
+import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 
-
-import { Avatar, FriendsList, Item, Name, Status } from './FriendList.styled';
-import friends from './friends.json';
-
-
-export const FriendList = () => {
+export const FriendList = ({ friends }) => {
   return (
     <FriendsList>
-      {friends.map(({ id, isOnline, avatar, name }) => {
-        // console.log(isOnline);
-        return (            
-          <Item key={id} >
-            <Status $status = {isOnline}/>
-            <Avatar src={avatar} />
-            <Name>{name}</Name>
-          </Item>
-        );
-      })}
+      <FriendListItem
+        friends={friends}
+        // avatar={friends.avatar}
+        // name={friends.name}
+        // isOnline={friends.isOnline}
+      />
     </FriendsList>
   );
 };
-

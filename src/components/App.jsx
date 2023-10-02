@@ -10,7 +10,9 @@ import transactions from 'components/Data/transactions.json';
 
 
 
+
 export const App = () => (
+
   <>
     <Profile
       username={user.username}
@@ -26,3 +28,4 @@ export const App = () => (
     <TransactionHistory items={transactions}/>
   </>
 );
+

@@ -22,7 +22,7 @@ export const Statistic = styled.ul`
 export const Licomponent = styled.li`
   display: flex;
   flex-direction: column;
-  background-color: rgb(200, 150, 100);
+  background-color: ${({color})=> (color)};
   width: calc(100% / 4);
   font-size: 50px;
   justify-content: center;
@@ -34,8 +34,7 @@ export const Label = styled.span`
   font-size: 30px;
   padding: 10px;
   font-weight: 500;
-  /* background: '#' + Math.floor(Math.random() * 16777215).toString(16); */
-`;
+  `;
 
 export const Percentage = styled.span`
   font-size: 40px;

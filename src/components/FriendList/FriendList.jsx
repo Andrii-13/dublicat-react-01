@@ -7,15 +7,23 @@ import {
 } from './FriendList.styled';
 import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 
-export const FriendList = ({ friends }) => {
+export const FriendList = ({friends}) => { 
   return (
     <FriendsList>
-      <FriendListItem
-        friends={friends}
-        // avatar={friends.avatar}
-        // name={friends.name}
-        // isOnline={friends.isOnline}
+      {friends.map(({id, avatar, name, isOnline})=>(
+        <FriendListItem
+        key={id}
+        avatar={avatar}
+        name={name}
+        status={isOnline}
       />
+      ))}      
     </FriendsList>
   );
 };
+
+
+
+
+
+    

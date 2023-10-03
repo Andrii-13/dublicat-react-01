@@ -10,7 +10,7 @@ export const PageTitle = styled.h2`
   font-size: 50px;
   text-align: center;
   padding: 80px 10px;
-  display: ${({title})=>(title ? 'block' : 'none')};
+  /* display: ${({title})=>(title ? 'block' : 'none')}; */
 `;
 
 export const Statistic = styled.ul`

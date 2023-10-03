@@ -5,9 +5,6 @@ import {
   TableData,
 } from './TransactionHistory.styled';
 
-
-let i = 0;
-
 export const TransactionHistory = ({items}) => {
   return (
     <TableTag>
@@ -19,10 +16,9 @@ export const TransactionHistory = ({items}) => {
         </TableRow>
       </TableHead>
       <tbody>
-        {items.map(({ id, type, amount, currency }) => {
-          i += 1;
-          return (
-            <TableRow key={id} $number={i}>
+        {items.map(({ id, type, amount, currency }, index) => {
+         return (
+            <TableRow key={id} $idx={index}>
               <TableData>{type}</TableData>
               <TableData>{amount}</TableData>
               <TableData>{currency}</TableData>
